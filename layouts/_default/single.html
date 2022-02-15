@@ -105,7 +105,12 @@
 
       {{- end -}}
 
+    {{ end }}
+  </div>
 
+  <div>
+    {{ if eq .Site.Params.commpost true }}
+      {{ partial "commpost.html" . }}
     {{ end }}
   </div>
 
